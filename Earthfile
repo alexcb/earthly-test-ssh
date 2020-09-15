@@ -8,4 +8,4 @@ RUN apt-get update && apt-get install -y ssh
 
 test:
   RUN echo hello world
-  RUN --with-ssh ssh -o "StrictHostKeyChecking=no" git@github.com
+  RUN --ssh ssh -o "StrictHostKeyChecking=no" git@github.com
