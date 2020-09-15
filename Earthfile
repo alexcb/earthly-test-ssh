@@ -7,5 +7,4 @@ ENV DEBCONF_NONINTERACTIVE_SEEN true
 RUN apt-get update && apt-get install -y ssh
 
 test:
-  RUN echo hello world
   RUN --ssh ssh -o "StrictHostKeyChecking=no" git@github.com
